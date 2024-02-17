@@ -1,7 +1,11 @@
 const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
+const mongoose = require('mongoose');
 
+const dotenv = require('dotenv');
+
+dotenv.config({ path: './config.env' });
 
 const AppError = require('./utils/appError')
 
@@ -33,4 +37,24 @@ app.all("*", (req, res, next) => {
 
   next(err);
 });
+
+const DB = process.env.DATABASE.replace(
+  '<PASSWORD>',
+  process.env.DATABASE_PASSWORD,
+  );
+
+    
+  mongoose
+    .connect(DB, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    .then(() => {
+      console.log('Connected successfully');
+    });
+  const port = process.env.PORT || 3000;
+  app.listen(port, '127.0.0.1', () => {
+    console.log('sha8al ya kber');
+  });
+  
 module.exports = app;
