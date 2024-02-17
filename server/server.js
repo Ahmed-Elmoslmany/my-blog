@@ -21,7 +21,7 @@ const DB = process.env.DATABASE.replace(
     .then(() => {
       console.log('Connected successfully');
     });
-  
-  app.listen(process.env.PORT, '127.0.0.1', () => {
+  const port = process.env.PORT || 3000;
+  app.listen(port, '127.0.0.1', () => {
     console.log('sha8al ya kber');
   });

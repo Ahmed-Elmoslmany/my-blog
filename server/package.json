@@ -4,8 +4,7 @@
   "description": "my own blog beta version",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "build": "npm run build",
+    "start": "node server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
