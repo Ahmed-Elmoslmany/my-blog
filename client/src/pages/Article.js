@@ -28,11 +28,13 @@ function Article() {
   //   },
   // };
 
+    const baseUrl = "https://blog-server-alpha-blue.vercel.app"
+
   useEffect(() => {
     async function getArticle() {
       try {
         setIsLoading(true);
-        const res = await axios.get(`http://127.0.0.1:5000/api/v1/articles/${id}`);
+        const res = await axios.get(`${baseUrl}/api/v1/articles/${id}`);
         const data = res.data;
         setArticle(data.data.article);
         console.log(data);
