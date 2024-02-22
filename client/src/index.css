@@ -135,7 +135,7 @@ color: #FFF;
 /* سطر جديد في المقالة */
 
 .post-wrapper ul{
-  padding-right: 1.2rem;
+  padding: 1.2rem;
   margin: 0;
   list-style: none;
   font-weight: 600;
@@ -143,6 +143,8 @@ color: #FFF;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 0.5rem;
   border-right: 0.2rem solid #0484dc;
+  border-bottom: 0.2rem solid #0484dc;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -346,6 +348,55 @@ color: #FFF;
   height: 100%;
   
 }
+
+/* Colored text */
+.info{
+  background-color: #6A5ACD;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.success{
+  background-color: #32CD32;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.redirect{
+  background-color: #1E90FF;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.clientError{
+  background-color: #FF4500;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.serverError{
+  background-color: #FF0000;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+
+
 
 /* Mobile Responsive */
 @media only screen and (max-width: 600px) {
