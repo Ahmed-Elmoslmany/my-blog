@@ -66,7 +66,9 @@ button.icon {
   color: var(--text-color); 
   transition: all 0.5s;
   
-
+  --note-background: #123543;
+  --note-border: #0484dc;
+  --note-color: #000;
   --metaData-color: #a5a5a5;
 
 }
@@ -211,7 +213,7 @@ color: #FFF;
      background-repeat: no-repeat;
      border-right: solid 0.2rem #3498db;
      border-radius: 0.5rem;
-     line-height: 18px;
+     line-height: 1.8rem;
      overflow: hidden;
      padding: 1.2rem 1rem;
      /* box-shadow: 0 0 10px #3498db; */
