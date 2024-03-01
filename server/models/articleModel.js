@@ -21,6 +21,14 @@ const articleSchema = new mongoose.Schema({
       type: String,
       required: [true, "Article must have a read time"],
     },
+    cover: {
+      type: String,
+      required: [true, "Article must have a cover"],
+    },
+    hook: {
+      type: String,
+      required: [true, "Article must have a hook"],
+    }
   },
   tags: {
     type: [String],

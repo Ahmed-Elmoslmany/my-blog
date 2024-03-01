@@ -17,7 +17,7 @@ function Home() {
       try {
         setIsLoading(true)
         
-        const res = await axios.get(`${baseUrl}/api/v1/articles?fields=metaData&limit=4&sort=createdAt`);
+        const res = await axios.get(`${baseUrl}/api/v1/articles?fields=metaData&limit=4&sort=-createdAt`);
         const data = res.data;
         setArticles(data.data.articles);
         setIsLoading(false)
