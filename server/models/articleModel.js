@@ -28,7 +28,7 @@ const articleSchema = new mongoose.Schema({
     hook: {
       type: String,
       required: [true, "Article must have a hook"],
-    }
+    },
   },
   tags: {
     type: [String],
@@ -43,14 +43,26 @@ const articleSchema = new mongoose.Schema({
   },
   author: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Author',
+    ref: "Author",
     required: [true, "Article must have an author"],
   },
   createdAt: {
     type: Date,
     default: Date.now(),
   },
+
+  select: {
+    type: Boolean,
+    default: false
+  },
 });
+
+
+articleSchema.pre(/^find/, function(next) {
+  this.find({select: {$ne: false}})
+
+  next()
+})
 
 const Article = mongoose.model("Article", articleSchema);
 
