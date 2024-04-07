@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import ArticlesList from "./pages/ArticlesList";
 // import Footer from "./components/Footer";
 import Article from "./pages/Article";
+import AllArticles from "./pages/AllArticles";
 
 // Create Context
 export const ThemeContext = createContext();
@@ -25,7 +26,9 @@ function App() {
       <Header />
        <Routes >
         <Route path="/" element={<Home />} />
-        <Route path="/articles" element={<ArticlesList />} />
+        {/* <Route path="/articles" element={<ArticlesList />} /> */}
+        <Route path="/articles" element={<AllArticles />} />
+        <Route path="/articles/:tag" element={<AllArticles />} />
         <Route path="/article/:id" element={<Article />} />
           
        </Routes>

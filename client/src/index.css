@@ -304,6 +304,10 @@ color: #FFF;
  
 }
 
+.tags a{
+  text-decoration: none;
+}
+
 .tags div{
   background: var(--highlited-text);
   display: flex;
@@ -317,6 +321,21 @@ color: #FFF;
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   letter-spacing: 0.5px;
+  border: 1px #0484dc solid;
+  transition: all 0.4s ease;
+}
+
+.tags div:hover{
+  background-color: var(--header-background);
+  border: #0484dc solid transparent;
+}
+
+.homeTags{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 /* Author */
@@ -396,6 +415,21 @@ color: #FFF;
   font-family: 'Roboto', sans-serif;
     color: #fff;
 }
+
+
+.slick-slide {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.slider-item {
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+
+}
+
+
+
 
 
 

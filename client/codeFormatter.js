@@ -1,7 +1,7 @@
 const fs = require('fs');
 const relaceLinesWithBackSlashes= () => {
     // let text = "example1; example2; example3";
-    let text = fs.readFileSync('./src/markdown/article2.md', 'utf-8');
+    let text = fs.readFileSync('./src/markdown/article5.md', 'utf-8');
 
     // Using regular expression to replace colon with newline
     // text = text.replace(/;/g, '\\n');

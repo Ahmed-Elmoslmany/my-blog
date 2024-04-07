@@ -4,11 +4,9 @@ function Footer() {
   const { isDark } = useContext(ThemeContext);
   return (
     <div className='container' data-theme={isDark ? "dark" : "light"}>
-    <div >footer</div>
-    <div >footer</div>
-    <div >footer</div>
-    <div >footer</div>
-    <div >footer</div>
+      <h1>أحمد المسلماني، مهندس برمجيات👨‍💻</h1>
+      <br/>
+      <h1>شغوف بمجال الباك إند</h1>
     </div>
   )
 }

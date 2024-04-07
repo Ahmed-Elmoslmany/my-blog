@@ -5,7 +5,6 @@
     padding: 1rem 1.5rem 1rem 1.5rem;
     
     align-items: center;
-    height: 100%;
 }
 
 .newArticlesHeader{
@@ -13,3 +12,27 @@
     padding-top: 5rem;
     margin:  0 auto;  
 }
+
+.sliderHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.viewMore {
+    align-self: end;
+    padding: .3rem .5rem;
+    color: white;
+    border-radius: 9px;
+    text-decoration-line: none;
+    border: 1px solid transparent; 
+    transition: all 0.5s ease;
+    margin-bottom: 0.3rem;
+}
+
+.viewMore:hover {
+    border: 1px solid #0484dc;
+    color: #0484dc;
+}
+

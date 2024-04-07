@@ -3,6 +3,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ArticlesList from "./ArticlesList";
 import LinearProgress from '@mui/material/LinearProgress';
+import Footer from "../components/Footer"
+import HomeTags from "../components/HomeTags";
 
 
 
@@ -31,10 +33,8 @@ function Home() {
   if (isLoading) {
     return (
       <div className="Loader">
-
-    
       <LinearProgress />
-    
+      
       </div>
     )
   }
@@ -42,6 +42,10 @@ function Home() {
   return (
     <div>
       <ArticlesList articles={articles}/>
+      <HomeTags />
+      {/* <Footer/> */}
+      
+     
     </div>
   );
 }
